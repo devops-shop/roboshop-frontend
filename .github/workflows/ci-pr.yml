@@ -3,3 +3,5 @@ on: [pull_request]
 jobs:
   ReUse:
     uses: devops-shop/roboshop-github-actions/.github/workflows/ci-pr.yml@main
+    with:
+      appType: 'angular'
