@@ -8,8 +8,8 @@ jobs:
   Dev_Deploy:
     uses: devops-shop/roboshop-github-actions/.github/workflows/aks-deploy.yml@main
     with:
-      appType: 'angular'
       appName: 'frontend'
+      appEnv: 'dev'
       resourceGroup: 'ukwest-dev'
     secrets:
         vault_token: ${{ secrets.vault_token }}
